@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
-
 import { Context } from '../context';
-
+import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 
@@ -32,16 +31,22 @@ export default function Home() {
   if (!showChat) return <div />;
 
   return (
-    <div className=''>
-      <ChatEngine
-        height='100vh'
-        projectID='
+    <React.Fragment>
+      <Head>
+        <title>Chat App: Chat</title>
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      </Head>
+      <main>
+        <div className=''>
+          <ChatEngine
+            height='100vh'
+            projectID='
           b4744a4b-accc-49d5-a193-179fe0549b22'
-        userName={username}
-        userSecret={secret}
-        renderNewMessageForm={() => <MessageFormSocial />}
-      />
-      <style>{`
+            userName={username}
+            userSecret={secret}
+            renderNewMessageForm={() => <MessageFormSocial />}
+          />
+          <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
         * {
@@ -274,6 +279,8 @@ export default function Home() {
           background: transparent; /* Optional: just make scrollbar invisible */
       }
       `}</style>
-    </div>
+        </div>
+      </main>
+    </React.Fragment>
   );
 }
