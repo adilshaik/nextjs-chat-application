@@ -39,6 +39,7 @@ export default function Home() {
       <main>
         <div className=''>
           <ChatEngine
+            offset={6}
             height='100vh'
             projectID='
           b4744a4b-accc-49d5-a193-179fe0549b22'
