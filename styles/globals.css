@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+#new-chat-plus-button {
+  background-color: transparent !important;
+}
+
+#new-chat-plus-button svg {
+  font-size: 20px !important;
+}
+
+#msg-textarea {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.ce-message-input-form {
+  min-height: 50px !important;
+  border-top: 1px solid #ccc !important;
+}
+
+.ce-message-input-form #msg-textarea {
+  top: 12px !important;
+}
+
+#ce-send-message-button {
+  display: block !important;
+  bottom: 5px !important;
+}
+
+.send-icon {
+  margin: auto !important;
+}
+
+.ce-message-input-form {
+  height: 40px !important;
+}
+
+#ce-upload-document-icon {
+  bottom: 15px !important;
+}
+
+#ce-ice-breaker-gif {
+  margin: auto !important;
+}
+
+#ce-login-fail-gif {
+  margin: auto !important;
+}
+
+input {
+  font-family: 'Roboto', sans-serif !important;
+  border-radius: 5px !important;
+}
+
+.anticon-delete {
+  display: none;
+}
